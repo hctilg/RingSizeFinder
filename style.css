@@ -40,7 +40,7 @@ body {
 p {
   color: #666;
   text-align: center;
-  width: calc(100% - 50px);
+  width: calc(100vw - 50px);
   margin-bottom: 25px;
   font-size: 12pt;
 }
