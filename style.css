@@ -90,10 +90,6 @@ input {
   margin: 1rem auto;
 }
 
-#description p {
-  margin: 0 auto 1rem;
-}
-
 code {
   border-bottom: 1px solid rgba(137, 125, 154, 0.4);
   text-align:center;
