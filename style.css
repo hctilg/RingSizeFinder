@@ -88,6 +88,10 @@ input {
 #description {
   max-width: 1000px;
   margin: 1rem auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 code {
