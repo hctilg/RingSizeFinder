@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Size Finder - Free Online Ring Size Calculator & Chart</title>
+    <meta name="description" content="Find your perfect ring size quickly and accurately with our free Ring Size Finder. Measure your finger online using simple tools and international size charts.">
+    <meta name="keywords" content="ring size finder, ring size calculator, ring size chart, ring measurement, finger size, ring sizing tool, international ring sizes">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ring Size Finder - Free Online Ring Size Calculator">
+    <meta property="og:description" content="Measure your ring size online with our free Ring Size Finder and international ring size charts.">
+    <meta property="og:url" content="https://hctilg.github.io/RingSizeFinder">
+    <link rel="canonical" href="https://hctilg.github.io/RingSizeFinder">
+
+    <meta name="twitter:title" content="Ring Size Finder">
+    <meta name="twitter:description" content="Find your perfect ring size online for free.">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="theme-color" content="#f6f7fb">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  </head>
+  <body>
+    <section id="container">
+      <h2 id="title">Ring Size Finder</h2>
+      <p class="description">Wrap a string around your finger, measure its length with a ruler, and enter the measurement below.</p>
+      <input type="number" id="circumference" step="0.1" placeholder="Example: 57.5mm" translate="no" spellcheck="false" />
+      <div id="result" style="display: none;">
+        <span>Loading...</span>
+        <canvas id="ring"></canvas>
+      </div>
+    </section>
+    <section id="description">
+      <p>
+        The length of the string wrapped around your finger is equal to the circumference of the circle.
+        <br>We know that the circumference of a circle is calculated using the formula <strong><code>C = 2 × π × R</code></strong>.
+        <br>Therefore, once we know the string's length (the circumference),<br> we can calculate the ring's inner diameter using the formula <strong><code>D = 2 × R = C ÷ π</code></strong>.
+    </p>
+      <p>There is no exact formula on the internet for converting diameter to ring size,<br> but I have come up with an approximate formula for this conversion using regression...</p>
+      <div id="plot"></div>
+    </section>
+    <footer>
+      <span>Made with 💜 By <a href="https://github.com/hctilg/RingSizeFinder/">Mahi</a></span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
